@@ -5,8 +5,6 @@ import gql from "graphql-tag";
 import { useMutation } from "@apollo/react-hooks";
 import {FETCH_TRIPS_QUERY} from '../util/graphql'
 
-import 'react-semantic-ui-datepickers/dist/react-semantic-ui-datepickers.css';
-
 export default function TripForm() {
   const { values, onChange, onSubmit } = useForm(createTripCallback, {
     name: "",
