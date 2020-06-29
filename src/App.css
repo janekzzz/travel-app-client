@@ -1,0 +1,94 @@
+* {
+    font-family: Jost;
+    font-size: 16px;
+}
+body {
+    background: #f5f5f5;
+}
+
+.smol {
+    font-size: 80%;
+}
+.form-container {
+    width: 400px;
+    margin: auto;
+}
+
+.input-field {
+    width: 200px;
+}
+
+.input-field-dropdown {
+    width: 120px
+}
+
+.orange-button {
+    background-color: #feca57;
+}
+
+.input-dropdown-alone {
+    width: 200px;
+    text-align: center;
+    height: 42px;
+}
+
+.input-dropdown {
+    margin-left: 100px;
+}
+
+.orange-background {
+    
+    background-color: #feca57;
+}
+.full {
+    width: 100%;
+}
+
+.tripTitle {
+    text-align: center;
+    margin: 10px 0 10px 0;
+    padding: 25px 0 25px 0;
+    background-color: #feca57;
+    
+}
+.tripTitle h1 {
+
+    font-weight: 400;
+}
+
+.trip-description-date {
+    text-align:center;
+    margin-bottom: 20px;
+}
+
+.trip-description-1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.input-expenses input {
+    margin-bottom: 20px;
+}
+.input-expense {
+    background-color: grey;
+    margin-bottom: 25px;
+    width: 40%;
+}
+.input-button {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.category-bar {
+    background: #feca57;
+    height: 20px;
+    border-radius: 4px;
+    position: relative;
+}
+.category-bar p{
+    position: absolute;
+    margin: 0;
+    right: 0;
+    top: 0;
+    transform: translateX(110%);
+}
