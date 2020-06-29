@@ -7,10 +7,10 @@ import gql from "graphql-tag";
 export default function TripHeaderCard(props) {
   const [editable, setEditable] = useState(false);
   const [name, setName] = useState(props.name);
-  const [startDate, setStartDate] = useState(props.startDate);
-  const [endDate, setEndDate] = useState(props.endDate);
+  const [startDate] = useState(props.startDate);
+  const [endDate] = useState(props.endDate);
 
-  const [modifyTrip, { error }] = useMutation(MODIFY_TRIP_MUTATION, {
+  const [modifyTrip] = useMutation(MODIFY_TRIP_MUTATION, {
     update() {
       setEditable(false)
 

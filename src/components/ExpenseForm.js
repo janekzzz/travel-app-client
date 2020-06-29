@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import gql from "graphql-tag";
-import { Card, Form, Button, Dropdown, Input } from "semantic-ui-react";
+import { Card, Form, Button, Dropdown } from "semantic-ui-react";
 import { useMutation } from "@apollo/react-hooks";
 import axios from "axios";
 
@@ -119,21 +119,18 @@ function ExpenseForm({ tripId, users }) {
     setSearchQuery(data.searchQuery);
   };
 
-  const [searchQueryUser, setSearchQueryUser] = useState("");
 
   const onDropdownChangeUser = (e, data) => {
     setPaidBy(data.value);
   };
 
-  const onDropdownSearchChangeUser = (e, data) => {
-    setSearchQueryUser(data.searchQuery);
-  };
+  
 
   const submit = () => {
     currencyCheck(currency);
   };
 
-  const [submitExpense, { error }] = useMutation(SUBMIT_EXPENSE_MUTATION, {
+  const [submitExpense] = useMutation(SUBMIT_EXPENSE_MUTATION, {
     update(proxy, result) {
       setName("");
       setCost(0);

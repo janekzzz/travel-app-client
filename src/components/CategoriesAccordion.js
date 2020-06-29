@@ -1,5 +1,5 @@
 import React, { useState, Fragment } from "react";
-import { Accordion, Icon, Card, Transition } from "semantic-ui-react";
+import { Accordion, Icon, Card } from "semantic-ui-react";
 import CategorizeExpenses from '../util/CategorizeExpenses'
 
 function CategoriesAccordion(props) {

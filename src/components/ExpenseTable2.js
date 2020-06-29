@@ -12,8 +12,8 @@ export default function ExpenseTable2({ expenses, tripId, baseCurrency }) {
   const [cost, setCost] = useState(0);
   const [category, setCategory] = useState("");
   const [paidBy, setPaidBy] = useState("");
-  const [currency, setCurrency] = useState("EUR");
-  const [rate, setRate] = useState(1);
+  const [currency] = useState("EUR");
+  const [rate] = useState(1);
 
   const emojis = [
     {
@@ -38,7 +38,7 @@ export default function ExpenseTable2({ expenses, tripId, baseCurrency }) {
     setPaidBy(paidBy);
   };
 
-  const [submitExpense, { error }] = useMutation(MODIFY_EXPENSE_MUATTION, {
+  const [submitExpense] = useMutation(MODIFY_EXPENSE_MUATTION, {
     update() {
       setName("");
       setCost(0);

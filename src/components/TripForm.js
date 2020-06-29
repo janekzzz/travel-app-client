@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import { Button, Form } from "semantic-ui-react";
 import { useForm } from "../util/hooks";
 import gql from "graphql-tag";
